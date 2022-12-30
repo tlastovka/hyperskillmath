@@ -119,9 +119,11 @@ def statistics():
         if diff_input == 1:
             stat_file.writelines(f"{student_name}: {number_of_good_answers}/5 in level 1 (simple operations with numbers 2-9) \n")
             print("The results are saved in \"results.txt\"")
+            stat_file.close()
         else:
             stat_file.write(f"{student_name}: {number_of_good_answers}/5 in level 2 (integral squares of 11-29)")
             print("The results are saved in \"results.txt\"")
+            stat_file.close()
     else:
         pass
 
